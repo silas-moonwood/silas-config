@@ -1,0 +1,35 @@
+{
+  "name": "silas-config",
+  "version": "0.0.1",
+  "description": "Silas's Tools Config",
+  "private": true,
+  "keywords": [
+    "oxc-config",
+    "silas"
+  ],
+  "license": "ISC",
+  "author": {
+    "name": "Silas",
+    "email": "silas.dew@outlook.com"
+  },
+  "type": "module",
+  "scripts": {
+    "dev": "pnpm -r --filter \"@silas/oxc-config\" run dev",
+    "build": "pnpm -r --parallel run build",
+    "fmt": "oxfmt",
+    "fmt:check": "oxfmt --check",
+    "lint": "oxlint",
+    "lint:fix": "oxlint --fix",
+    "typecheck": "pnpm -r run typecheck",
+    "release": "pnpm build && pnpm -r publish --access public"
+  },
+  "devDependencies": {
+    "@silas-moonwood/oxc-config": "workspace:*",
+    "oxfmt": "^0.44.0",
+    "oxlint": "^1.59.0",
+    "oxlint-tsgolint": "^0.20.0",
+    "tsdown": "^0.21.7",
+    "typescript": "^6.0.2"
+  },
+  "packageManager": "pnpm@10.33.0"
+}
