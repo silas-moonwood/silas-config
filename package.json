@@ -1,8 +1,8 @@
 {
   "name": "silas-config",
   "version": "0.0.1",
-  "description": "Silas's Tools Config",
   "private": true,
+  "description": "Silas's Tools Config",
   "keywords": [
     "oxc-config",
     "silas"
