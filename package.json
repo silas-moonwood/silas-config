@@ -14,7 +14,7 @@
   },
   "type": "module",
   "scripts": {
-    "dev": "pnpm -r --filter \"@silas/oxc-config\" run dev",
+    "dev": "pnpm -r --parallel run dev",
     "build": "pnpm -r --parallel run build",
     "fmt": "oxfmt",
     "fmt:check": "oxfmt --check",
@@ -25,6 +25,7 @@
   },
   "devDependencies": {
     "@silas-moonwood/oxc-config": "workspace:*",
+    "@types/node": "^25.5.2",
     "oxfmt": "^0.44.0",
     "oxlint": "^1.59.0",
     "oxlint-tsgolint": "^0.20.0",

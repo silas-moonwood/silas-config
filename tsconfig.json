@@ -5,7 +5,6 @@
     "esModuleInterop": true,
     "allowImportingTsExtensions": true,
     "resolveJsonModule": true,
-
     "strict": true,
     "strictNullChecks": true,
     "noFallthroughCasesInSwitch": true,
@@ -15,7 +14,6 @@
     "noUncheckedIndexedAccess": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    
     "noEmit": true,
     "skipLibCheck": true
   }
