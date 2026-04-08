@@ -22,11 +22,10 @@ const fileUpdate = async (lintConfigPath: string, pluginsConfig: string[]) => {
   const pluginsRegex = /plugins:\s*\[([\s\S]*?)\]/
   const match = existingContent.match(pluginsRegex)
   const oldPluginsRaw =
-    match?.[1]
+    (match?.[1] ?? '')
       .split(',')
       .map((s) => s.trim().replace(/['"]/g, '')) // 移除引号和空格
-      .filter(Boolean) || // 移除空值
-    []
+      .filter(Boolean) // 移除空值
 
   const combinedPlugins = Array.from(new Set([...oldPluginsRaw, ...pluginsConfig]))
 
