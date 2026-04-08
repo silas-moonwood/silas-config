@@ -1,18 +1,5 @@
 import { defineConfig, type OxlintConfig } from 'oxlint'
 
-const plugins: OxlintConfig['plugins'] = [
-  'eslint',
-  'typescript',
-  'unicorn',
-  'oxc',
-  'jsx-a11y',
-  'jsdoc',
-  'react',
-  'vitest',
-  'vue',
-  'import'
-]
-
 const oxcConfigs: OxlintConfig['rules'] = {
   'oxc/approx-constant': 'error',
   'oxc/bad-bitwise-operator': 'error',
@@ -102,6 +89,19 @@ const ignorePatterns: string[] = [
   'coverage/**',
   'vendor/**',
   'test/snapshots/**'
+]
+
+const plugins: OxlintConfig['plugins'] = [
+  'eslint',
+  'typescript',
+  'unicorn',
+  'oxc',
+  'jsx-a11y',
+  'jsdoc',
+  'react',
+  'vitest',
+  'vue',
+  'import'
 ]
 
 export const lintConfig = defineConfig({
