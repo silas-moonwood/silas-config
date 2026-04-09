@@ -1,6 +1,13 @@
 {
-  "name": "@silas-moonwood/oxc-config",
+  "name": "@silas-moonwood/oxc-config-cli",
   "version": "0.0.1",
+  "description": "",
+  "keywords": [
+    "oxc-config",
+    "silas"
+  ],
+  "license": "ISC",
+  "author": "",
   "files": [
     "dist",
     "package.json"
@@ -24,12 +31,15 @@
     "dev": "tsdown --watch"
   },
   "dependencies": {
-    "@silas-moonwood/build-config": "workspace:*"
+    "@clack/prompts": "^1.2.0",
+    "cac": "^7.0.0",
+    "fs-extra": "^11.3.4",
+    "pathe": "^2.0.3",
+    "picocolors": "^1.1.1"
   },
   "devDependencies": {
-    "oxfmt": "^0.44.0",
-    "oxlint": "^1.59.0",
-    "oxlint-tsgolint": "^0.20.0",
+    "@silas-moonwood/build-config": "workspace:*",
+    "@types/fs-extra": "^11.0.4",
     "tsdown": "^0.21.7",
     "typescript": "^6.0.2"
   },

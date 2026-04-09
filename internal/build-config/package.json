@@ -1,6 +1,7 @@
 {
-  "name": "@silas-moonwood/oxc-config",
+  "name": "@silas-moonwood/build-config",
   "version": "0.0.1",
+  "description": "",
   "files": [
     "dist",
     "package.json"
@@ -23,13 +24,7 @@
     "build": "tsdown",
     "dev": "tsdown --watch"
   },
-  "dependencies": {
-    "@silas-moonwood/build-config": "workspace:*"
-  },
   "devDependencies": {
-    "oxfmt": "^0.44.0",
-    "oxlint": "^1.59.0",
-    "oxlint-tsgolint": "^0.20.0",
     "tsdown": "^0.21.7",
     "typescript": "^6.0.2"
   },

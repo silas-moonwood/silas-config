@@ -23,5 +23,6 @@
   },
   "[vue]": {
     "editor.defaultFormatter": "oxc.oxc-vscode"
-  }
+  },
+  "kiroAgent.configureMCP": "Disabled"
 }
